@@ -1,0 +1,115 @@
+.sitenav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__list{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    &__item{
+        margin: 0;
+        padding: 0;
+        color: #939CAA;
+    }
+    &__item + &__item{
+        margin-left: 32px;
+    }
+    &__link{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        text-decoration: none;
+    }
+    &__link:hover{
+        color: #939CAA;
+    }
+    &__link:active{
+        cursor: progress;
+        transition: all 0.1s;
+        color: #FCB72B;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .sitenav{
+        &__link{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__item + &__item{
+            margin-left: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .sitenav{
+        &__link{
+            font-size: 13px;
+            line-height: 15px;
+        }
+        &__item + &__item{
+            margin-left: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .sitenav{
+        &__link{
+            font-size: 12px;
+            line-height: 13px;
+        }
+        &__item + &__item{
+            margin-left: 8px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .sitenav{
+        display: none;
+        &__list {
+           margin-bottom: auto;
+        }
+    }
+
+    .header--open .sitenav{
+        padding: 10px 30px;
+        padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        width: 70%;
+        height: 100vh;
+        left: 0;
+        background-color: rgba(51, 58, 68, 1);
+        z-index: 10;
+        display: inline-block;
+      }
+
+      .header--open .sitenav__list{
+          width: 100%;
+          flex-direction: column;
+          flex-grow: 4;
+
+
+      }
+
+      .header--open .sitenav__item {
+          margin: 0;
+          margin-bottom: 15px;
+      }
+      .sitenav__list {
+        align-items: flex-start;
+    }
+      .header--open .header__hamburger{
+          background-image: url("../images/close.png");
+          background-size: 20px 16px;
+      }
+}
