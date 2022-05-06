@@ -1,0 +1,260 @@
+.hero{
+    &__container{
+        background-image: url(../images/Bitmap.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    &__wrapper{
+        padding-left: 165px;
+        padding-top: 153px;
+    }
+    &__heading{
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    &__dash{
+        position: absolute;
+        top: 350px;
+        left: 20px;
+    }
+    &__desc{
+        margin: 0;
+        padding: 0;
+        width: 405px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        margin-left: 95px;
+    }
+    &__button{
+        margin-left: 95px;
+        margin-bottom: 152px;
+    }
+    &__arrow{
+        width: 447px;
+        height: 138px;
+        position: absolute;
+        top: 345px;
+        right: 190px;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 2/1),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
+    /* Retina-specific stuff here */
+    .hero__container{
+        background-image: url(../images/Bitmap@2x.png);
+    }
+}
+
+@media only screen and (max-width: 1296px){
+    .hero{
+        &__arrow{
+            top: 345px;
+            right: 150px;
+        }
+    }
+}
+@media only screen and (max-width: 1246px){
+    .hero{
+        &__arrow{
+            top: 345px;
+            right: 100px;
+        }
+    }
+}
+@media only screen and (max-width: 1200px){
+    .hero{
+        &__arrow{
+            top: 345px;
+            right: 50px;
+        }
+    }
+}
+@media only screen and (max-width: 1150px){
+    .hero{
+        &__arrow{
+            top: 345px;
+            right: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .hero{
+        &__arrow{
+            top: 330px;
+            right: 0px;
+        }
+        &__heading{
+            width: 450px;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        &__dash{
+            width: 180px;
+            top: 330px;
+            left: 20px;
+        }
+        &__desc{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            width: 350px;
+        }
+    }
+}
+@media only screen and (max-width: 1000px){
+    .hero{
+        &__heading{
+            width: 450px;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        &__dash{
+            width: 180px;
+            top: 330px;
+            left: 20px;
+        }
+        &__desc{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            width: 350px;
+        }
+        &__arrow{
+            top: 330px;
+            right: 0px;
+            width: 350px;
+            height: 100px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .hero{
+        &__container{
+            background-image: url(../images/Bitmap-table.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            // width: 100%;
+        }
+        &__wrapper{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__heading{
+            margin: 0;
+            padding: 0;
+            width: 573px;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 56px;
+            margin-top: 137px;
+            margin-bottom: 24px;
+        }
+        &__dash{
+            display: none;
+        }
+        &__desc{
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            width: 573px;
+            margin-bottom: 32px;
+        }
+        &__arrow{
+            top: 440px;
+            left: -127px;
+            width: 447px;
+            height: 138px;
+        }
+        &__button{
+            margin-left: 0px;
+            margin-bottom: 152px;
+        }
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .hero{
+        &__container{
+            background-image: url(../images/Bitmap-mobile.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        &__wrapper{
+            margin: 0;
+            padding: 0;
+            // width: 311px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__heading{
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+            line-height: 40px;
+            margin-top: 137px;
+            margin-bottom: 24px;
+            width: 311px;
+        }
+        &__dash{
+            display: none;
+        }
+        &__desc{
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            width: 311px;
+            margin-bottom: 32px;
+        }
+        &__arrow{
+            top: 480px;
+            left: -300px;
+            width: 447px;
+            height: 138px;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .hero{
+        &__arrow{
+            top: 480px;
+            left: -260px;
+
+        }
+    }
+}
