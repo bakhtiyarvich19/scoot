@@ -60,12 +60,12 @@
     }
     &__img {
         border-radius: 50%;
-        margin-left: 100px;
+        margin-left: 75px;
     }
     &__arrow-left {
         max-width: 800px;
         position: absolute;
-        left: -4%;
+        left: 15%;
         bottom: 0;
     }
     &__item-right{
@@ -73,10 +73,10 @@
         left: 25px;
     }
     .even--oval {
-        left: -70%;
+        left: -80%;
     }
     .arrow--even{
-        left: -10%;
+        left: -12%;
         top: 0%;
     }
     .even--img{
@@ -90,11 +90,14 @@
 @media only screen and(max-width:1095px){
     .easy{
         &__item{
-            max-width: 895px;
+            max-width: 900px;
         }
         &__item-text{
             max-width:340px;
         }
+    }
+    .even--img{
+        margin-right: -60px;
     }
 }
 @media only screen and(max-width:932px){
@@ -115,7 +118,9 @@
         &__item-text {
             padding-top: 56px;
         }
-    }
+
+}
+
 }
 
 @media only screen and(max-width:564px){
@@ -129,6 +134,9 @@
         }
         .arrow--bottom{
             left: 41%;
+        }
+        &__img{
+            margin: 0;
         }
     }
 }

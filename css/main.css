@@ -1003,7 +1003,7 @@ img {
   position: absolute;
   z-index: -2;
   top: 40px;
-  left: -5%;
+  left: -7%;
   display: inline-block;
   width: 100%;
   max-width: 900px;
@@ -1217,13 +1217,13 @@ img {
 
 .easy__img {
   border-radius: 50%;
-  margin-left: 100px;
+  margin-left: 75px;
 }
 
 .easy__arrow-left {
   max-width: 800px;
   position: absolute;
-  left: -4%;
+  left: 15%;
   bottom: 0;
 }
 
@@ -1233,11 +1233,11 @@ img {
 }
 
 .easy .even--oval {
-  left: -70%;
+  left: -80%;
 }
 
 .easy .arrow--even {
-  left: -10%;
+  left: -12%;
   top: 0%;
 }
 
@@ -1252,10 +1252,13 @@ img {
 
 @media only screen and (max-width: 1095px) {
   .easy__item {
-    max-width: 895px;
+    max-width: 900px;
   }
   .easy__item-text {
     max-width: 340px;
+  }
+  .even--img {
+    margin-right: -60px;
   }
 }
 
@@ -1295,6 +1298,9 @@ img {
   .easy .arrow--bottom {
     left: 41%;
   }
+  .easy__img {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -1310,6 +1316,80 @@ img {
   .easy .arrow--even {
     max-width: 400px;
     left: -139%;
+  }
+}
+
+.aside__container {
+  background-image: url(../../images/aside-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 165px;
+  padding-right: 165px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aside__desc {
+  margin: 0;
+  padding: 0;
+  width: 415px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+  padding: 102px 0;
+}
+
+.aside__link:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1100px) {
+  .aside__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aside__desc {
+    margin: 0;
+    padding: 0;
+    padding-top: 62px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .aside__left {
+    padding-bottom: 62px;
+  }
+  .aside__appstore {
+    width: 114px;
+    height: 40px;
+  }
+  .aside__google {
+    width: 130px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aside__container {
+    padding: 0px;
+    background-size: cover;
+  }
+  .aside__desc {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */

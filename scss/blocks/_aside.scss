@@ -1,0 +1,67 @@
+.aside{
+    &__container{
+        background-image: url(../../images/aside-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        padding-left: 165px;
+        padding-right: 165px;
+        justify-content: space-between;
+    }
+    &__desc{
+        margin: 0;
+        padding: 0;
+        width: 415px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+        padding: 102px 0;
+        // margin-left: 165px;
+    }
+    &__link:hover{
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .aside{
+        &__container{
+            display: flex;
+            flex-direction: column;
+        }
+        &__desc{
+            margin: 0;
+            padding: 0;
+            padding-top: 62px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        &__left{
+            padding-bottom: 62px;
+        }
+        &__appstore{
+            width: 114px;
+            height: 40px;
+        }
+        &__google{
+            width: 130px;
+            height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .aside{
+        &__container{
+            padding: 0px;
+            background-size: cover;
+        }
+        &__desc{
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+}
