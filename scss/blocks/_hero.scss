@@ -1,6 +1,6 @@
 .hero{
     &__container{
-        background-image: url(../images/Bitmap.png);
+        background-image: url(../../images/Bitmap.png);
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -60,7 +60,7 @@ only screen and ( min-resolution: 192dpi),
 only screen and ( min-resolution: 2dppx) {
     /* Retina-specific stuff here */
     .hero__container{
-        background-image: url(../images/Bitmap@2x.png);
+        background-image: url(../../images/Bitmap@2x.png);
     }
 }
 
